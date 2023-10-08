@@ -1,0 +1,122 @@
+[
+  {
+    "cat_id": 0,
+    "category_name": "All",
+    "image": "Sports_Recreation.jpg"
+  },
+  {
+    "cat_id": 1,
+    "category_name": "Sports & Recreation",
+    "image": "Sports_Recreation.jpg"
+  },
+  {
+    "cat_id": 2,
+    "category_name": "Arts & Entertainment",
+    "image": "Arts_Entertainment.jpg"
+  },
+  {
+    "cat_id": 3,
+    "category_name": "Automotive",
+    "image": "Automotive.jpg"
+  },
+  {
+    "cat_id": 4,
+    "category_name": "Beauty & Spa",
+    "image": "Beauty_Spa.jpg"
+  },
+  {
+    "cat_id": 5,
+    "category_name": "Education",
+    "image": "Education.jpg"
+  },
+  {
+    "cat_id": 6,
+    "category_name": "Event Planning Services",
+    "image": "Event_Planning_Services.jpg"
+  },
+  {
+    "cat_id": 7,
+    "category_name": "Financial Services",
+    "image": "Financial_Services.jpg"
+  },
+  {
+    "cat_id": 8,
+    "category_name": "Health & Medical",
+    "image": "Health_Medical.jpg"
+  },
+  {
+    "cat_id": 9,
+    "category_name": "Home Services",
+    "image": "Home_Services.jpg"
+  },
+  {
+    "cat_id": 10,
+    "category_name": "Hotels & Travel",
+    "image": "Hotels_Travel.jpg"
+  },
+  {
+    "cat_id": 11,
+    "category_name": "Local Services",
+    "image": "Local_Services.jpg"
+  },
+  {
+    "cat_id": 12,
+    "category_name": "Pets",
+    "image": "Pets.jpg"
+  },
+  {
+    "cat_id": 13,
+    "category_name": "Professional Services",
+    "image": "Professional_Services.jpg"
+  },
+  {
+    "cat_id": 14,
+    "category_name": "Real Estate",
+    "image": "Real_Estate.jpg"
+  },
+  {
+    "cat_id": 15,
+    "category_name": "Restaurants",
+    "image": "Restaurants.jpg"
+  },
+  {
+    "cat_id": 16,
+    "category_name": "Shopping",
+    "image": "Shopping.jpg"
+  },
+  {
+    "cat_id": 17,
+    "category_name": "Food",
+    "image": "Food.jpg"
+  },
+  {
+    "cat_id": 18,
+    "category_name": "Fitness & Instruction",
+    "image": "Fitness_Instruction.jpg"
+  },
+  {
+    "cat_id": 19,
+    "category_name": "Contractors",
+    "image": "Contractors.jpg"
+  },
+  {
+    "cat_id": 20,
+    "category_name": "Public Services & Government",
+    "image": "Public_Services_Government.jpg"
+  },
+  {
+    "cat_id": 21,
+    "category_name": "Cabinetry",
+    "image": "Cabinetry.jpg"
+  },
+  {
+    "cat_id": 22,
+    "category_name": "Monument Maker",
+    "image": "Monument_Maker.jpg"
+  },
+  {
+    "cat_id": 23,
+    "category_name": "Military recruiting office",
+    "image": "Military_recruiting_office.jpg"
+  }
+]
