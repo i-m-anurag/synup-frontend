@@ -2,121 +2,121 @@
   {
     "cat_id": 0,
     "category_name": "All",
-    "image": "Sports_Recreation.jpg"
+    "image": "./../../../assets/img/external/pexels-cottonbro-studio-3972109.jpg"
   },
   {
     "cat_id": 1,
     "category_name": "Sports & Recreation",
-    "image": "Sports_Recreation.jpg"
+    "image": "./../../../assets/img/external/sports.jpg"
   },
   {
     "cat_id": 2,
     "category_name": "Arts & Entertainment",
-    "image": "Arts_Entertainment.jpg"
+    "image": "./../../../assets/img/external/pexels-cottonbro-studio-3972109.jpg"
   },
   {
     "cat_id": 3,
     "category_name": "Automotive",
-    "image": "Automotive.jpg"
+    "image": "./../../../assets/img/external/pexels-pixabay-164634.jpg"
   },
   {
     "cat_id": 4,
     "category_name": "Beauty & Spa",
-    "image": "Beauty_Spa.jpg"
+    "image": "./../../../assets/img/external/pexels-monstera-production-6621182.jpg"
   },
   {
     "cat_id": 5,
     "category_name": "Education",
-    "image": "Education.jpg"
+    "image": "./../../../assets/img/external/pexels-pixabay-265087.jpg"
   },
   {
     "cat_id": 6,
     "category_name": "Event Planning Services",
-    "image": "Event_Planning_Services.jpg"
+    "image": "./../../../assets/img/external/pexels-ralph-chang-794212.jpg"
   },
   {
     "cat_id": 7,
     "category_name": "Financial Services",
-    "image": "Financial_Services.jpg"
+    "image": "./../../../assets/img/external/pexels-energepiccom-313691.jpg"
   },
   {
     "cat_id": 8,
     "category_name": "Health & Medical",
-    "image": "Health_Medical.jpg"
+    "image": "./../../../assets/img/external/pexels-polina-tankilevitch-3872373.jpg"
   },
   {
     "cat_id": 9,
     "category_name": "Home Services",
-    "image": "Home_Services.jpg"
+    "image": "./../../../assets/img/external/pexels-andrea-piacquadio-845451.jpg"
   },
   {
     "cat_id": 10,
     "category_name": "Hotels & Travel",
-    "image": "Hotels_Travel.jpg"
+    "image": "./../../../assets/img/external/pexels-elina-sazonova-1838554.jpg"
   },
   {
     "cat_id": 11,
     "category_name": "Local Services",
-    "image": "Local_Services.jpg"
+    "image": "./../../../assets/img/external/pexels-fox-1595385.jpg"
   },
   {
     "cat_id": 12,
     "category_name": "Pets",
-    "image": "Pets.jpg"
+    "image": "./../../../assets/img/external/pexels-helena-lopes-4453109.jpg"
   },
   {
     "cat_id": 13,
     "category_name": "Professional Services",
-    "image": "Professional_Services.jpg"
+    "image": "./../../../assets/img/external/pexels-photomix-company-518244.jpg"
   },
   {
     "cat_id": 14,
     "category_name": "Real Estate",
-    "image": "Real_Estate.jpg"
+    "image": "./../../../assets/img/external/pexels-pixabay-290595.jpg"
   },
   {
     "cat_id": 15,
     "category_name": "Restaurants",
-    "image": "Restaurants.jpg"
+    "image": "./../../../assets/img/external/pexels-spencer-davis-4393021.jpg"
   },
   {
     "cat_id": 16,
     "category_name": "Shopping",
-    "image": "Shopping.jpg"
+    "image": "./../../../assets/img/external/pexels-tima-miroshnichenko-5455009.jpg"
   },
   {
     "cat_id": 17,
     "category_name": "Food",
-    "image": "Food.jpg"
+    "image": "./../../../assets/img/external/pexels-spencer-davis-4393021.jpg"
   },
   {
     "cat_id": 18,
     "category_name": "Fitness & Instruction",
-    "image": "Fitness_Instruction.jpg"
+    "image": "./../../../assets/img/external/sports.jpg"
   },
   {
     "cat_id": 19,
     "category_name": "Contractors",
-    "image": "Contractors.jpg"
+    "image": "./../../../assets/img/external/pexels-vlada-karpovich-4050287.jpg"
   },
   {
     "cat_id": 20,
     "category_name": "Public Services & Government",
-    "image": "Public_Services_Government.jpg"
+    "image": "./../../../assets/img/external/pexels-pixabay-290595.jpg"
   },
   {
     "cat_id": 21,
     "category_name": "Cabinetry",
-    "image": "Cabinetry.jpg"
+    "image": "./../../../assets/img/external/pexels-pixabay-290595.jpg"
   },
   {
     "cat_id": 22,
     "category_name": "Monument Maker",
-    "image": "Monument_Maker.jpg"
+    "image": "./../../../assets/img/external/pexels-photomix-company-518244.jpg"
   },
   {
     "cat_id": 23,
     "category_name": "Military recruiting office",
-    "image": "Military_recruiting_office.jpg"
+    "image": "./../../../assets/img/external/pexels-pixabay-54098.jpg"
   }
 ]
