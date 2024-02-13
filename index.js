@@ -23,6 +23,38 @@ app.use(bodyParser.json())
 // Enable CORS
 app.use(cors());
 
+function convertData(inputData, mapData) {
+    const result = [];
+
+    inputData.forEach(inputObj => {
+        const newObj = {};
+
+        for (const key in mapData) {
+            const inputDataKeys = mapData[key];
+            const values = [];
+
+            inputDataKeys.forEach(inputKey => {
+                if (inputKey in inputObj && inputObj[inputKey] !== '') {
+                    // If inputKey exists in inputObj and its value is not empty, push its value to values array
+                    values.push(inputObj[inputKey]);
+                }
+            });
+
+            // Assign values array to newObj with key, or assign an empty string if values array is empty
+            newObj[key] = values.length === 1 ? values[0] : (values.length > 0 ? values : '');
+        }
+        let data = {
+            ...newObj,
+            data: {
+                ...inputObj
+            }
+        }
+        result.push(data);
+    });
+
+    return result;
+}
+
 app.get('/category', (req, res) => {
     res.json(category);
 })
@@ -82,6 +114,18 @@ app.get('/synup', async (req, res) => {
     }
 
 })
+
+app.post('/standardresponse', (req, res) => {
+
+    if (req.body.inputData && Array.isArray(req.body.inputData) && req.body.mapData && req.headers['x-api-key'] === "Lkx9bvfvfiPWNknptTsD") {
+        let data = convertData(req.body.inputData, req.body.mapData)
+        res.status(200).json({ data: data })
+    }
+    else {
+
+        res.status(500).json({ msg: 'bad request' })
+    }
+});
 
 app.use(express.static(path.join(__dirname, process.env.DIRECTORY)));
 app.get('*', (req, res) => {
