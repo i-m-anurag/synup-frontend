@@ -3,7 +3,7 @@ const path = require('path');
 const cors = require('cors');
 var bodyParser = require('body-parser')
 require('dotenv').config();
-import { rateLimit } from 'express-rate-limit'
+const rateLimit = require('express-rate-limit');
 const category = require('./db/category.json');
 const business = require('./db/business.json');
 const allCategory = require('./db/category_master.json');
