@@ -20,7 +20,7 @@ const app = express();
 // })
 
 // Apply the rate limiting middleware to all requests.
-app.use(limiter)
+//app.use(limiter)
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
