@@ -233,8 +233,8 @@ async function fetchAndInsertFromPresignedUrl() {
                 yid: biz.id,
                 name: biz.display_name,
                 country_iso: biz.country,
-                city: biz.city,
-                category_id: category.find(el => el.category_name === biz.category) ? category.find(el => el.category_name === biz.category).id : ''
+                city: biz.city
+                // category_id: category.find(el => el.category_name === biz.category) ? category.find(el => el.category_name === biz.category).id : ''
             }));
 
             existingData.push(...transformed);
