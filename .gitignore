@@ -1,3 +1,8 @@
 node_modules
 .env
 package-lock.json
+db/dynamic_business.json
+db/batch_ref.json
+sitemaps/*
+*.xml
+prosearch/*.xml
