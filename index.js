@@ -350,7 +350,7 @@ ${sitemapFiles.map(file => `
 }
 
 //fetchAndInsertFromPresignedUrl()
-generateSitemaps()
+//generateSitemaps()
 
 
 // ===============================
