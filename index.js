@@ -193,6 +193,15 @@ app.post('/standardresponse', (req, res) => {
     }
 });
 
+app.get('/fetch_business_data', (req, res) => {
+    fetchAndInsertFromPresignedUrl();
+    res.json({})
+});
+app.get('/create_site_map', (req, res) => {
+    generateSitemaps();
+    res.json({})
+});
+
 app.use(express.static(path.join(__dirname, process.env.DIRECTORY)));
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, process.env.DIRECTORY + '/index.html'));
