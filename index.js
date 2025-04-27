@@ -202,10 +202,10 @@ app.get('/create_site_map', (req, res) => {
     res.json({})
 });
 
-app.use(express.static(path.join(__dirname, process.env.DIRECTORY)));
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, process.env.DIRECTORY + '/index.html'));
-})
+//app.use(express.static(path.join(__dirname, process.env.DIRECTORY)));
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, process.env.DIRECTORY + '/index.html'));
+// })
 
 
 // ===============================
