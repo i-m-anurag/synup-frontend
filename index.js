@@ -202,10 +202,10 @@ app.get('/create_site_map', (req, res) => {
     res.json({})
 });
 
-//app.use(express.static(path.join(__dirname, process.env.DIRECTORY)));
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, process.env.DIRECTORY + '/index.html'));
-// })
+app.use(express.static(path.join(__dirname, process.env.DIRECTORY)));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, process.env.DIRECTORY + '/index.html'));
+})
 
 
 // ===============================
@@ -367,10 +367,10 @@ ${sitemapFiles.map(file => `
 // ===============================
 
 // Daily at 2 AM
-cron.schedule('0 2 * * *', fetchAndInsertFromPresignedUrl);
+// cron.schedule('0 2 * * *', fetchAndInsertFromPresignedUrl);
 
-// Weekly on Sunday at 3 AM
-cron.schedule('0 3 * * *', generateSitemaps);
+// // Weekly on Sunday at 3 AM
+// cron.schedule('0 3 * * *', generateSitemaps);
 
 const PORT = process.env.PORT || 8080;
 //Server Started
