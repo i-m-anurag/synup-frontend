@@ -5,23 +5,22 @@ const archiver = require('archiver');
 var bodyParser = require('body-parser')
 require('dotenv').config();
 const cron = require('node-cron');
+const connectDB = require('./config/db');
 const fs = require('fs');
+const categoryRoutes = require('./routes/category.routes');
+const businessRoutes = require('./routes/business.routes');
 
+connectDB();
+require('./cron/generateBusiness');
 const DB_URL = process.env.MONGO_URI || 'mongodb://localhost:27017/prospect';
 const DOMAIN = process.env.DOMAIN || 'https://yourdomain.com';
 const SITEMAP_DIR = path.join(__dirname, 'sitemaps');
 const URL_LIMIT = 50000;
-
-
-
-const category = require('./db/category.json');
-const business = require('./db/business.json');
 const allCategory = require('./db/category_master.json');
 const business_data = require('./db/business_data.json');
 const DB_DIR = path.join(__dirname, 'db');
 const LOCAL_JSON_PATH = path.join(DB_DIR, 'dynamic_business.json');
 const BATCH_REF_PATH = path.join(DB_DIR, 'batch_ref.json');
-
 const WEBSITE_DIR = path.join(__dirname, process.env.DIRECTORY);
 const axios = require('axios')
 
@@ -81,9 +80,7 @@ function convertData(inputData, mapData) {
     return result;
 }
 
-app.get('/category', (req, res) => {
-    res.json(category);
-})
+
 
 app.get('/business', (req, res) => {
     let business_data_filter = allCategory.map(el => {
@@ -96,9 +93,6 @@ app.get('/business', (req, res) => {
     res.json(business_data_filter.splice(Math.floor(Math.random() * business_data_filter.length), 6));
 });
 
-app.get('/allCategory', (req, res) => {
-    res.json(allCategory)
-});
 
 app.get('/business_data', (req, res) => {
     if (req.query.category_id) {
@@ -201,6 +195,9 @@ app.get('/create_site_map', (req, res) => {
     generateSitemaps();
     res.json({})
 });
+
+app.use('/api/category', categoryRoutes);
+app.use('/api/business', businessRoutes);
 
 app.use(express.static(path.join(__dirname, process.env.DIRECTORY)));
 app.get('*', (req, res) => {
